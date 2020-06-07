@@ -138,6 +138,10 @@
 			<Option target="ExperimentCPP"/>
 			<Option target="DistributedMQ"/>
 		</Unit>
+		<Unit filename="/Users/wintercyan/CLionProjects/DistributedMQ/ExperimentCPP/DemoMAP.hpp">
+			<Option target="ExperimentCPP"/>
+			<Option target="DistributedMQ"/>
+		</Unit>
 		<Unit filename="/Users/wintercyan/CLionProjects/DistributedMQ/ExperimentCPP/ExpMain.cpp">
 			<Option target="ExperimentCPP"/>
 			<Option target="DistributedMQ"/>
@@ -211,6 +215,10 @@
 			<Option target="DistributedMQ"/>
 		</Unit>
 		<Unit filename="/Users/wintercyan/CLionProjects/DistributedMQ/main.cpp">
+			<Option target="ExperimentCPP"/>
+			<Option target="DistributedMQ"/>
+		</Unit>
+		<Unit filename="/Users/wintercyan/CLionProjects/DistributedMQ/param.hpp">
 			<Option target="ExperimentCPP"/>
 			<Option target="DistributedMQ"/>
 		</Unit>

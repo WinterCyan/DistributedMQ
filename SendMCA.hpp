@@ -5,8 +5,9 @@
 #ifndef DISTRIBUTEDMQ_SENDMCA_HPP
 #define DISTRIBUTEDMQ_SENDMCA_HPP
 
-
-#include "RemoteQ.hpp"
+#include "Msg.hpp"
+#include "param.hpp"
+class RemoteQ;
 
 class SendMCA {
 private:
@@ -14,10 +15,11 @@ private:
     int establishConn();
     void start();
     void sleep();
-    int deliverMsg();
+    int deliverMsg(Msg);
 
 public:
-    SendMCA();
+    MCA_STATUS status = STOPPED;
+    SendMCA(RemoteQ*);
     void run();
 
 };

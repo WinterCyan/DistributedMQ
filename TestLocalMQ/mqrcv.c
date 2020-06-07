@@ -34,7 +34,8 @@ int main(void) {
     printf("message queue: ready to receive messages.\n");
     for(;;) {
         // normally receiving never ends but just to make conclusion 
-        // this program ends wuth string of end
+        // this program ends with string of end
+        // rcv 200 chars
         if (msgrcv(msqid, &buf, sizeof(buf.mtext), 0, 0) == -1) {
             // print error "msgrcv: Identifier removed"
             perror("msgrcv");

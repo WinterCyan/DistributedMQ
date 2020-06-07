@@ -14,3 +14,7 @@ int RcvMCA::handOverMsg() {
 
     return 0;
 }
+
+RcvMCA::RcvMCA() {
+
+}

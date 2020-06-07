@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/wintercyan/CLionProjects/DistributedMQ/ExperimentCPP/Demo.cpp
-Demo.hpp
-/Users/wintercyan/CLionProjects/DistributedMQ/ExperimentCPP/Demo.hpp
-iostream
--
+/Users/wintercyan/CLionProjects/DistributedMQ/Consumer.cpp
+Consumer.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/Consumer.hpp
+
+/Users/wintercyan/CLionProjects/DistributedMQ/Consumer.hpp
+Msg.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/Msg.hpp
+LocalQ.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.hpp
 
 /Users/wintercyan/CLionProjects/DistributedMQ/ExperimentCPP/Demo.hpp
 string
@@ -30,6 +34,10 @@ Demo.hpp
 map
 -
 
+/Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.cpp
+LocalQ.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.hpp
+
 /Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.hpp
 Q.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/Q.hpp
@@ -37,6 +45,30 @@ Q.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/Msg.hpp
 string
 -
+
+/Users/wintercyan/CLionProjects/DistributedMQ/Producer.cpp
+Producer.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/Producer.hpp
+unistd.h
+-
+iostream
+-
+
+/Users/wintercyan/CLionProjects/DistributedMQ/Producer.hpp
+Msg.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/Msg.hpp
+QM.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/QM.hpp
+
+/Users/wintercyan/CLionProjects/DistributedMQ/Q.cpp
+iostream
+-
+sys/ipc.h
+-
+sys/msg.h
+-
+Q.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/Q.hpp
 
 /Users/wintercyan/CLionProjects/DistributedMQ/Q.hpp
 Msg.hpp
@@ -46,6 +78,8 @@ string
 
 /Users/wintercyan/CLionProjects/DistributedMQ/QM.cpp
 iostream
+-
+string
 -
 QM.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/QM.hpp
@@ -72,7 +106,33 @@ QM.hpp
 map
 -
 
+/Users/wintercyan/CLionProjects/DistributedMQ/RcvMCA.cpp
+RcvMCA.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/RcvMCA.hpp
+
+/Users/wintercyan/CLionProjects/DistributedMQ/RcvMCA.hpp
+QM.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/QM.hpp
+
+/Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.cpp
+RemoteQ.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.hpp
+
 /Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.hpp
 Q.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/Q.hpp
+
+/Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.cpp
+SendMCA.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.hpp
+
+/Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.hpp
+RemoteQ.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.hpp
+
+/Users/wintercyan/CLionProjects/DistributedMQ/main.cpp
+iostream
+-
+Producer.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/Producer.hpp
 

@@ -11,7 +11,7 @@
 #include "LocalQ.hpp"
 #include "RemoteQ.hpp"
 
-#define LOCAL_Q_NAME "local queue"
+#define LOCAL_Q_NAME "local_queue"
 
 struct RT; // prevent ref-cycle
 
@@ -29,7 +29,7 @@ private:
 
 public:
     QM(std::string);
-    int handleMsg(Msg msg);
+    int handleMsg(Msg *msg);
     void run();
 
 };

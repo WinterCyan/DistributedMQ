@@ -8,7 +8,7 @@
 
 #include "Q.hpp"
 
-class LocalQ:Q {
+class LocalQ: public Q {
 private:
 //    Consumer* consumer;
 public:

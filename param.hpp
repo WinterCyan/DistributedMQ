@@ -1,0 +1,10 @@
+//
+// Created by Winter Cyan on 2020/6/7.
+//
+
+#ifndef DISTRIBUTEDMQ_PARAM_HPP
+#define DISTRIBUTEDMQ_PARAM_HPP
+
+enum MCA_STATUS {RUNNING, SUSPENDED, STOPPED};
+
+#endif //DISTRIBUTEDMQ_PARAM_HPP

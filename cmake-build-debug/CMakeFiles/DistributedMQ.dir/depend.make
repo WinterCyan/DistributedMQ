@@ -27,6 +27,8 @@ CMakeFiles/DistributedMQ.dir/Producer.cpp.o: ../Producer.hpp
 CMakeFiles/DistributedMQ.dir/Producer.cpp.o: ../Q.hpp
 CMakeFiles/DistributedMQ.dir/Producer.cpp.o: ../QM.hpp
 CMakeFiles/DistributedMQ.dir/Producer.cpp.o: ../RemoteQ.hpp
+CMakeFiles/DistributedMQ.dir/Producer.cpp.o: ../SendMCA.hpp
+CMakeFiles/DistributedMQ.dir/Producer.cpp.o: ../param.hpp
 
 CMakeFiles/DistributedMQ.dir/Q.cpp.o: ../Msg.hpp
 CMakeFiles/DistributedMQ.dir/Q.cpp.o: ../Q.cpp
@@ -39,6 +41,8 @@ CMakeFiles/DistributedMQ.dir/QM.cpp.o: ../QM.cpp
 CMakeFiles/DistributedMQ.dir/QM.cpp.o: ../QM.hpp
 CMakeFiles/DistributedMQ.dir/QM.cpp.o: ../RT.hpp
 CMakeFiles/DistributedMQ.dir/QM.cpp.o: ../RemoteQ.hpp
+CMakeFiles/DistributedMQ.dir/QM.cpp.o: ../SendMCA.hpp
+CMakeFiles/DistributedMQ.dir/QM.cpp.o: ../param.hpp
 
 CMakeFiles/DistributedMQ.dir/RT.cpp.o: ../LocalQ.hpp
 CMakeFiles/DistributedMQ.dir/RT.cpp.o: ../Msg.hpp
@@ -47,6 +51,8 @@ CMakeFiles/DistributedMQ.dir/RT.cpp.o: ../QM.hpp
 CMakeFiles/DistributedMQ.dir/RT.cpp.o: ../RT.cpp
 CMakeFiles/DistributedMQ.dir/RT.cpp.o: ../RT.hpp
 CMakeFiles/DistributedMQ.dir/RT.cpp.o: ../RemoteQ.hpp
+CMakeFiles/DistributedMQ.dir/RT.cpp.o: ../SendMCA.hpp
+CMakeFiles/DistributedMQ.dir/RT.cpp.o: ../param.hpp
 
 CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o: ../LocalQ.hpp
 CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o: ../Msg.hpp
@@ -55,17 +61,22 @@ CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o: ../QM.hpp
 CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o: ../RcvMCA.cpp
 CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o: ../RcvMCA.hpp
 CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o: ../RemoteQ.hpp
+CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o: ../SendMCA.hpp
+CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o: ../param.hpp
 
 CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o: ../Msg.hpp
 CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o: ../Q.hpp
 CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o: ../RemoteQ.cpp
 CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o: ../RemoteQ.hpp
+CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o: ../SendMCA.hpp
+CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o: ../param.hpp
 
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: ../Msg.hpp
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: ../Q.hpp
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: ../RemoteQ.hpp
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: ../SendMCA.cpp
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: ../SendMCA.hpp
+CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: ../param.hpp
 
 CMakeFiles/DistributedMQ.dir/main.cpp.o: ../LocalQ.hpp
 CMakeFiles/DistributedMQ.dir/main.cpp.o: ../Msg.hpp
@@ -73,5 +84,7 @@ CMakeFiles/DistributedMQ.dir/main.cpp.o: ../Producer.hpp
 CMakeFiles/DistributedMQ.dir/main.cpp.o: ../Q.hpp
 CMakeFiles/DistributedMQ.dir/main.cpp.o: ../QM.hpp
 CMakeFiles/DistributedMQ.dir/main.cpp.o: ../RemoteQ.hpp
+CMakeFiles/DistributedMQ.dir/main.cpp.o: ../SendMCA.hpp
 CMakeFiles/DistributedMQ.dir/main.cpp.o: ../main.cpp
+CMakeFiles/DistributedMQ.dir/main.cpp.o: ../param.hpp
 

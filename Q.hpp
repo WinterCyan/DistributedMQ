@@ -9,18 +9,23 @@
 #include "Msg.hpp"
 #include <string>
 
+#define PERMS 0644
 
 class Q {
 private:
     std::string name;
     int key; // ftok key
     int id; // msgget id
+    Msg *tempMsg;
+    int msgNum = 0;
 
 public:
     Q(std::string);
     int getId();
+    int getMsgNum();
     std::string getName();
-    int putMsg(Msg msg);
+
+    virtual int putMsg(Msg *msg);
     Msg popMsg();
 };
 

@@ -8,5 +8,5 @@ file(GLOB SOURCES
         ExperimentCPP/*.hpp
         ExperimentCPP/*.cpp)
 
-add_executable(DistributedMQ main.cpp ${SOURCE_FILES} ${SOURCES})
+add_executable(DistributedMQ main.cpp ${SOURCE_FILES} ${SOURCES} param.hpp)
 add_executable(ExperimentCPP ExperimentCPP/ExpMain.cpp ${SOURCES})

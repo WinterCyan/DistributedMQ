@@ -7,12 +7,14 @@
 
 
 #include "Q.hpp"
+#include "SendMCA.hpp"
 
-class RemoteQ:Q {
+class RemoteQ: public Q {
 private:
-//    SendMCA* sendMCA;
+    SendMCA* sendMCA;
 public:
     RemoteQ(std::string);
+    int putMsg(Msg *msg) override;
 };
 
 

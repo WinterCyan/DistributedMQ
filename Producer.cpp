@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <iostream>
 
-#define DEFAULT_DEST_QM "QM2"
+#define DEFAULT_DEST_QM "QM3"
 
 using namespace std;
 
@@ -15,7 +15,7 @@ using namespace std;
         sleep(1);
         auto msg = produce();
         cout<<"message \""<<msg.content<<"\" sent..."<<endl;
-        this->ownerQM.handleMsg(msg);
+        this->ownerQM.handleMsg(&msg);
     }
 }
 
@@ -24,7 +24,7 @@ Msg Producer::produce() {
     string msgCont = "Message content: ";
     auto i = random();
     msgCont.append(to_string(i));
-    auto msg = Msg(DEFAULT_DEST_QM, T1, msgCont.c_str());
+    auto msg = Msg(DEFAULT_DEST_QM, T1, msgCont.size(), msgCont.c_str());
     return msg;
 }
 
