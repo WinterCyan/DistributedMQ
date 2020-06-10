@@ -15,28 +15,26 @@ int Q::putMsg(Msg *msg) {
     buf.msgType = 1;
     memset(buf.msgText, 0, MSG_SZ);
     memcpy(buf.msgText, msg->msgText, MSG_SZ);
+    cout<<"put msg: "<<buf.msgText+20<<endl;
     if(msgsnd(id, (void*)&buf, MSG_SZ, 0) == -1) {
         perror("msgsnd");
         return -1;
     }
     msgNum++;
-    cout<<" current msg count: "<<msgNum<<endl;
     return 0;
 }
 
 // every invoke, retrieve a msg and return; kinda slow
 void Q::popMsg() { // return a char* ?
     struct Msg buf;
-    int c = msgrcv(id, &buf, MSG_SZ, 0, 0);
-//    if (msgrcv(id, tempMsg, MSG_SZ, 0, 0) == -1) { // how can I know the size of every single msg?
-    if (c == -1) {
+    if (msgrcv(id, &buf, MSG_SZ, 0, 0) == -1) {
         perror("msgrcv");
         return ;
     }
     msgNum--;
-    msg->msgType = buf.msgType;
-    memcpy(msg->msgText, buf.msgText, MSG_SZ);
-    cout<<msg->msgText+20<<endl;
+    inMsg->msgType = buf.msgType;
+    memcpy(inMsg->msgText, buf.msgText, MSG_SZ);
+    cout << "pop msg: " << inMsg->msgText + 20 << endl;
 }
 
 int Q::getId() {
@@ -51,7 +49,7 @@ std::string Q::getName() {
     return name;
 }
 
-Q::Q(std::string qName):name(qName),msg(new Msg()) {
+Q::Q(std::string qName): name(qName), inMsg(new Msg()) {
     key = ftok((name+".txt").c_str(),'B');
     if (key == -1) {
         perror("ftok err");

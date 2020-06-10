@@ -12,9 +12,10 @@
 class Demo {
 private:
     std::string name;
+    int d;
 public:
     [[noreturn]] void run();
-    Demo(std::string demoName);
+    Demo(std::string, int);
 };
 
 

@@ -1,4 +1,3 @@
-/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/TestAsync.dir
 /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/TestLocalMQ_Rcv.dir
 /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/ExperimentCPP.dir

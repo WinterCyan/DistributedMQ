@@ -10,8 +10,7 @@ file(GLOB ExperimentCPP_SOURCES
         ExperimentCPP/*.hpp
         ExperimentCPP/*.cpp)
 
-add_executable(DistributedMQ main.cpp ${MQ_SOURCES} TestAsync/AsyncMain.cpp)
+add_executable(DistributedMQ main.cpp ${MQ_SOURCES})
 add_executable(ExperimentCPP ExperimentCPP/ExpMain.cpp ${ExperimentCPP_SOURCES})
 add_executable(TestLocalMQ_Rcv TestLocalMQ/mqrcv.cpp)
 add_executable(TestLocalMQ_Snd TestLocalMQ/mqsend.cpp)
-add_executable(TestAsync TestAsync/AsyncMain.cpp)

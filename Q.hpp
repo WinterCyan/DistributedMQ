@@ -19,7 +19,8 @@ private:
     int msgNum = 0;
 
 public:
-    Msg *msg;
+    Msg *inMsg;
+    Msg *outMsg;
 
     Q(std::string);
     int getId();

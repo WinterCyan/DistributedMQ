@@ -11,8 +11,8 @@
 
 class RemoteQ: public Q {
 private:
-    SendMCA* sendMCA;
 public:
+    SendMCA* sendMCA;
     RemoteQ(std::string);
     int putMsg(Msg *msg) override;
 };

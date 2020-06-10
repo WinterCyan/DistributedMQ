@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named TestAsync
-
-# Build rule for target.
-TestAsync: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestAsync
-.PHONY : TestAsync
-
-# fast build rule for target.
-TestAsync/fast:
-	$(MAKE) -f CMakeFiles/TestAsync.dir/build.make CMakeFiles/TestAsync.dir/build
-.PHONY : TestAsync/fast
-
-#=============================================================================
 # Target rules for targets named TestLocalMQ_Rcv
 
 # Build rule for target.
@@ -499,36 +486,6 @@ SendMCA.cpp.s:
 	$(MAKE) -f CMakeFiles/DistributedMQ.dir/build.make CMakeFiles/DistributedMQ.dir/SendMCA.cpp.s
 .PHONY : SendMCA.cpp.s
 
-TestAsync/AsyncMain.o: TestAsync/AsyncMain.cpp.o
-
-.PHONY : TestAsync/AsyncMain.o
-
-# target to build an object file
-TestAsync/AsyncMain.cpp.o:
-	$(MAKE) -f CMakeFiles/TestAsync.dir/build.make CMakeFiles/TestAsync.dir/TestAsync/AsyncMain.cpp.o
-	$(MAKE) -f CMakeFiles/DistributedMQ.dir/build.make CMakeFiles/DistributedMQ.dir/TestAsync/AsyncMain.cpp.o
-.PHONY : TestAsync/AsyncMain.cpp.o
-
-TestAsync/AsyncMain.i: TestAsync/AsyncMain.cpp.i
-
-.PHONY : TestAsync/AsyncMain.i
-
-# target to preprocess a source file
-TestAsync/AsyncMain.cpp.i:
-	$(MAKE) -f CMakeFiles/TestAsync.dir/build.make CMakeFiles/TestAsync.dir/TestAsync/AsyncMain.cpp.i
-	$(MAKE) -f CMakeFiles/DistributedMQ.dir/build.make CMakeFiles/DistributedMQ.dir/TestAsync/AsyncMain.cpp.i
-.PHONY : TestAsync/AsyncMain.cpp.i
-
-TestAsync/AsyncMain.s: TestAsync/AsyncMain.cpp.s
-
-.PHONY : TestAsync/AsyncMain.s
-
-# target to generate assembly for a file
-TestAsync/AsyncMain.cpp.s:
-	$(MAKE) -f CMakeFiles/TestAsync.dir/build.make CMakeFiles/TestAsync.dir/TestAsync/AsyncMain.cpp.s
-	$(MAKE) -f CMakeFiles/DistributedMQ.dir/build.make CMakeFiles/DistributedMQ.dir/TestAsync/AsyncMain.cpp.s
-.PHONY : TestAsync/AsyncMain.cpp.s
-
 TestLocalMQ/mqrcv.o: TestLocalMQ/mqrcv.cpp.o
 
 .PHONY : TestLocalMQ/mqrcv.o
@@ -616,7 +573,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... TestAsync"
 	@echo "... edit_cache"
 	@echo "... TestLocalMQ_Rcv"
 	@echo "... ExperimentCPP"
@@ -659,9 +615,6 @@ help:
 	@echo "... SendMCA.o"
 	@echo "... SendMCA.i"
 	@echo "... SendMCA.s"
-	@echo "... TestAsync/AsyncMain.o"
-	@echo "... TestAsync/AsyncMain.i"
-	@echo "... TestAsync/AsyncMain.s"
 	@echo "... TestLocalMQ/mqrcv.o"
 	@echo "... TestLocalMQ/mqrcv.i"
 	@echo "... TestLocalMQ/mqrcv.s"

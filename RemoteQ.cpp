@@ -15,10 +15,7 @@ RemoteQ::RemoteQ(std::string qName):Q(qName) {
 
 int RemoteQ::putMsg(Msg *msg) {
     Q::putMsg(msg);
-    // empty and stopped
-//    if (sendMCA->status == STOPPED or sendMCA->status == SUSPENDED) {
-//    if (sendMCA->status == STOPPED) {
-//        cout<<"status when async call: "<<sendMCA->status<<endl;
-//        auto futureRun = std::async(&SendMCA::run, sendMCA);
-//    }
+    if (sendMCA->status == STOPPED) {
+        auto futureRun = std::async(&SendMCA::run, sendMCA);
+    }
 }

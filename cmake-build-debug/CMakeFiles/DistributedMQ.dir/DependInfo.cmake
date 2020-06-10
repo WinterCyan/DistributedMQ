@@ -14,7 +14,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/wintercyan/CLionProjects/DistributedMQ/RcvMCA.cpp" "/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o"
   "/Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.cpp" "/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o"
   "/Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.cpp" "/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o"
-  "/Users/wintercyan/CLionProjects/DistributedMQ/TestAsync/AsyncMain.cpp" "/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/DistributedMQ.dir/TestAsync/AsyncMain.cpp.o"
   "/Users/wintercyan/CLionProjects/DistributedMQ/main.cpp" "/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/DistributedMQ.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

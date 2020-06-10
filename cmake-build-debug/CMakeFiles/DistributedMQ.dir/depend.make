@@ -77,8 +77,6 @@ CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: ../SendMCA.cpp
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: ../SendMCA.hpp
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: ../param.hpp
 
-CMakeFiles/DistributedMQ.dir/TestAsync/AsyncMain.cpp.o: ../TestAsync/AsyncMain.cpp
-
 CMakeFiles/DistributedMQ.dir/main.cpp.o: ../LocalQ.hpp
 CMakeFiles/DistributedMQ.dir/main.cpp.o: ../Msg.hpp
 CMakeFiles/DistributedMQ.dir/main.cpp.o: ../Producer.hpp

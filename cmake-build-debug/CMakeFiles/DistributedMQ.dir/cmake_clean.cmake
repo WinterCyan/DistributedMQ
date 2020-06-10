@@ -9,7 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o"
   "CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o"
   "CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o"
-  "CMakeFiles/DistributedMQ.dir/TestAsync/AsyncMain.cpp.o"
   "CMakeFiles/DistributedMQ.dir/main.cpp.o"
   "DistributedMQ"
   "DistributedMQ.pdb"

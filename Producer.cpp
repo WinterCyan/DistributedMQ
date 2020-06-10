@@ -11,23 +11,22 @@ using namespace std;
 
 [[noreturn]] void Producer::run() {
     for (int i = 0; i<10; i++) {
-        usleep(100);
         auto msg = produce();
-        cout<<"produced msg: "<<msg->msgText<<endl;
-        this->ownerQM.handleMsg(msg);
+        cout<<"produced msg: "<<msg->msgText+20<<endl;
+        ownerQM->handleMsg(msg);
     }
 }
 
 // produce messages
 Msg *Producer::produce() {
     char s[MSG_SZ-1] = {};
-    for (int i = 0; i < MSG_SZ-5; ++i)
+    for (int i = 0; i < 10; ++i)
         s[i] = CHAR_SET[rand() % (sizeof(CHAR_SET) - 1)];
-    static struct Msg msg;
-    msg.msgType = 0;
-    memcpy(msg.msgText, DEFAULT_DEST_QM, sizeof(DEFAULT_DEST_QM));
-    memcpy(msg.msgText+QM_NAME_SZ, s, MSG_SZ-QM_NAME_SZ);
-    return &msg;
+    msg->msgType = 0;
+    memcpy(msg->msgText, DEFAULT_DEST_QM, sizeof(DEFAULT_DEST_QM));
+    memcpy(msg->msgText+QM_NAME_SZ, s, MSG_SZ-QM_NAME_SZ);
+    return msg;
 }
 
-Producer::Producer(std::string name, QM ownerQM) : ownerQM(ownerQM){}
+Producer::Producer(std::string name, QM *ownerQM) :
+    ownerQM(ownerQM), msg(new Msg()) {}

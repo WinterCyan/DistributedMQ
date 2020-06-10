@@ -14,7 +14,6 @@ int QM::handleMsg(Msg *msg) {
     char destQM[QM_NAME_SZ];
     memcpy(destQM, msg->msgText, QM_NAME_SZ);
     Q* nextQ = lookUpRT(destQM);
-    cout<<"Next Q: "<<nextQ->getName()<<endl;
     nextQ->putMsg(msg);
 //    routeMsg(msg, nextQ);
     return 0;

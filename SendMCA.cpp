@@ -15,25 +15,20 @@ void SendMCA::run(void) {
 //    auto sentMsgCount = 0;
     status = RUNNING;
     cout<<"sendMCA running..."<<endl;
-    // TODO: create new async thread
-//    for(;;) {
-    while (true) {
-        usleep(1000);
+    for (;;) {
         owner->popMsg(); // get msg from queue
-        deliverMsg(owner->msg); // deliver queue
-        usleep(1000);
+        deliverMsg(owner->inMsg); // deliver queue
 //        sentMsgCount++;
-        if (owner->getMsgNum() <= 0) {
-            status = SUSPENDED;
-            // TODO: set a timer, count down and shut down MCA
-            break;
-        }
+//        if (owner->getMsgNum() <= 0) {
+//            status = SUSPENDED;
+//            // TODO: set a timer, count down and shut down MCA
+//            break;
+//        }
     }
-//    return  sentMsgCount;
 }
 
 int SendMCA::deliverMsg(Msg *msg) {
-    cout<<"delivering msg "<<msg->msgText<<endl;
+    cout<<"delivering msg "<<msg->msgText+20<<endl;
 }
 
 SendMCA::SendMCA(RemoteQ* remoteQ) {

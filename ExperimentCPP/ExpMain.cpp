@@ -21,8 +21,8 @@ int run(string name, int c) {
 }
 
 int main() {
-    auto demo1 = new Demo("demo1");
-    auto demo2 = new Demo("demo2");
+    auto demo1 = new Demo("demo1", 1);
+    auto demo2 = new Demo("demo2", 2);
     auto f1 = async(&Demo::run, demo1);
     auto f2 = async(&Demo::run, demo2);
     sleep(3);

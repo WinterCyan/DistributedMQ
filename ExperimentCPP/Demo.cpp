@@ -9,12 +9,13 @@
 [[noreturn]] void Demo::run() {
     auto count = 0;
     while (true) {
+        sleep(d);
         std::cout<<name<<" running,,,"<<std::endl;
         count ++;
-        sleep(4);
     }
 }
 
-Demo::Demo(std::string demoName) {
+Demo::Demo(std::string demoName, int delay ) {
     name = demoName;
+    d = delay;
 }

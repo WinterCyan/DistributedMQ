@@ -53,7 +53,6 @@ CMAKE_BINARY_DIR = /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-deb
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/TestAsync.dir/all
 all: CMakeFiles/TestLocalMQ_Rcv.dir/all
 all: CMakeFiles/ExperimentCPP.dir/all
 all: CMakeFiles/TestLocalMQ_Snd.dir/all
@@ -67,7 +66,6 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/TestAsync.dir/clean
 clean: CMakeFiles/TestLocalMQ_Rcv.dir/clean
 clean: CMakeFiles/ExperimentCPP.dir/clean
 clean: CMakeFiles/TestLocalMQ_Snd.dir/clean
@@ -76,40 +74,13 @@ clean: CMakeFiles/DistributedMQ.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/TestAsync.dir
-
-# All Build rule for target.
-CMakeFiles/TestAsync.dir/all:
-	$(MAKE) -f CMakeFiles/TestAsync.dir/build.make CMakeFiles/TestAsync.dir/depend
-	$(MAKE) -f CMakeFiles/TestAsync.dir/build.make CMakeFiles/TestAsync.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target TestAsync"
-.PHONY : CMakeFiles/TestAsync.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/TestAsync.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TestAsync.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/TestAsync.dir/rule
-
-# Convenience name for target.
-TestAsync: CMakeFiles/TestAsync.dir/rule
-
-.PHONY : TestAsync
-
-# clean rule for target.
-CMakeFiles/TestAsync.dir/clean:
-	$(MAKE) -f CMakeFiles/TestAsync.dir/build.make CMakeFiles/TestAsync.dir/clean
-.PHONY : CMakeFiles/TestAsync.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/TestLocalMQ_Rcv.dir
 
 # All Build rule for target.
 CMakeFiles/TestLocalMQ_Rcv.dir/all:
 	$(MAKE) -f CMakeFiles/TestLocalMQ_Rcv.dir/build.make CMakeFiles/TestLocalMQ_Rcv.dir/depend
 	$(MAKE) -f CMakeFiles/TestLocalMQ_Rcv.dir/build.make CMakeFiles/TestLocalMQ_Rcv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target TestLocalMQ_Rcv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target TestLocalMQ_Rcv"
 .PHONY : CMakeFiles/TestLocalMQ_Rcv.dir/all
 
 # Build rule for subdir invocation for target.
@@ -136,7 +107,7 @@ CMakeFiles/TestLocalMQ_Rcv.dir/clean:
 CMakeFiles/ExperimentCPP.dir/all:
 	$(MAKE) -f CMakeFiles/ExperimentCPP.dir/build.make CMakeFiles/ExperimentCPP.dir/depend
 	$(MAKE) -f CMakeFiles/ExperimentCPP.dir/build.make CMakeFiles/ExperimentCPP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=14,15,16 "Built target ExperimentCPP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=13,14,15 "Built target ExperimentCPP"
 .PHONY : CMakeFiles/ExperimentCPP.dir/all
 
 # Build rule for subdir invocation for target.
@@ -163,7 +134,7 @@ CMakeFiles/ExperimentCPP.dir/clean:
 CMakeFiles/TestLocalMQ_Snd.dir/all:
 	$(MAKE) -f CMakeFiles/TestLocalMQ_Snd.dir/build.make CMakeFiles/TestLocalMQ_Snd.dir/depend
 	$(MAKE) -f CMakeFiles/TestLocalMQ_Snd.dir/build.make CMakeFiles/TestLocalMQ_Snd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target TestLocalMQ_Snd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=18,19 "Built target TestLocalMQ_Snd"
 .PHONY : CMakeFiles/TestLocalMQ_Snd.dir/all
 
 # Build rule for subdir invocation for target.
@@ -190,12 +161,12 @@ CMakeFiles/TestLocalMQ_Snd.dir/clean:
 CMakeFiles/DistributedMQ.dir/all:
 	$(MAKE) -f CMakeFiles/DistributedMQ.dir/build.make CMakeFiles/DistributedMQ.dir/depend
 	$(MAKE) -f CMakeFiles/DistributedMQ.dir/build.make CMakeFiles/DistributedMQ.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target DistributedMQ"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target DistributedMQ"
 .PHONY : CMakeFiles/DistributedMQ.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DistributedMQ.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DistributedMQ.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/DistributedMQ.dir/rule
