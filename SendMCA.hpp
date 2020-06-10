@@ -15,7 +15,7 @@ private:
     int establishConn();
     void start();
     void sleep();
-    int deliverMsg(Msg);
+    int deliverMsg(Msg*);
 
 public:
     MCA_STATUS status = STOPPED;

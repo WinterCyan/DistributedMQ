@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DistributedMQ.dir/Consumer.cpp.o"
-  "CMakeFiles/DistributedMQ.dir/ExperimentCPP/Demo.cpp.o"
-  "CMakeFiles/DistributedMQ.dir/ExperimentCPP/ExpMain.cpp.o"
   "CMakeFiles/DistributedMQ.dir/LocalQ.cpp.o"
+  "CMakeFiles/DistributedMQ.dir/Msg.cpp.o"
   "CMakeFiles/DistributedMQ.dir/Producer.cpp.o"
   "CMakeFiles/DistributedMQ.dir/Q.cpp.o"
   "CMakeFiles/DistributedMQ.dir/QM.cpp.o"
@@ -10,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o"
   "CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o"
   "CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o"
+  "CMakeFiles/DistributedMQ.dir/TestAsync/AsyncMain.cpp.o"
   "CMakeFiles/DistributedMQ.dir/main.cpp.o"
   "DistributedMQ"
   "DistributedMQ.pdb"

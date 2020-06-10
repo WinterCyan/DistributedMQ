@@ -70,22 +70,9 @@ CMakeFiles/ExperimentCPP.dir/ExperimentCPP/ExpMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/ExperimentCPP/ExpMain.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/ExperimentCPP/ExpMain.cpp -o CMakeFiles/ExperimentCPP.dir/ExperimentCPP/ExpMain.cpp.s
 
-CMakeFiles/ExperimentCPP.dir/Consumer.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
-CMakeFiles/ExperimentCPP.dir/Consumer.cpp.o: ../Consumer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ExperimentCPP.dir/Consumer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/Consumer.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/Consumer.cpp
-
-CMakeFiles/ExperimentCPP.dir/Consumer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExperimentCPP.dir/Consumer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/Consumer.cpp > CMakeFiles/ExperimentCPP.dir/Consumer.cpp.i
-
-CMakeFiles/ExperimentCPP.dir/Consumer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/Consumer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/Consumer.cpp -o CMakeFiles/ExperimentCPP.dir/Consumer.cpp.s
-
 CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
 CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.o: ../ExperimentCPP/Demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/ExperimentCPP/Demo.cpp
 
 CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.i: cmake_force
@@ -96,156 +83,19 @@ CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/ExperimentCPP/Demo.cpp -o CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.s
 
-CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
-CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.o: ../LocalQ.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.cpp
-
-CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.cpp > CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.i
-
-CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.cpp -o CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.s
-
-CMakeFiles/ExperimentCPP.dir/Producer.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
-CMakeFiles/ExperimentCPP.dir/Producer.cpp.o: ../Producer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ExperimentCPP.dir/Producer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/Producer.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/Producer.cpp
-
-CMakeFiles/ExperimentCPP.dir/Producer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExperimentCPP.dir/Producer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/Producer.cpp > CMakeFiles/ExperimentCPP.dir/Producer.cpp.i
-
-CMakeFiles/ExperimentCPP.dir/Producer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/Producer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/Producer.cpp -o CMakeFiles/ExperimentCPP.dir/Producer.cpp.s
-
-CMakeFiles/ExperimentCPP.dir/Q.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
-CMakeFiles/ExperimentCPP.dir/Q.cpp.o: ../Q.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ExperimentCPP.dir/Q.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/Q.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/Q.cpp
-
-CMakeFiles/ExperimentCPP.dir/Q.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExperimentCPP.dir/Q.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/Q.cpp > CMakeFiles/ExperimentCPP.dir/Q.cpp.i
-
-CMakeFiles/ExperimentCPP.dir/Q.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/Q.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/Q.cpp -o CMakeFiles/ExperimentCPP.dir/Q.cpp.s
-
-CMakeFiles/ExperimentCPP.dir/QM.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
-CMakeFiles/ExperimentCPP.dir/QM.cpp.o: ../QM.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ExperimentCPP.dir/QM.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/QM.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/QM.cpp
-
-CMakeFiles/ExperimentCPP.dir/QM.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExperimentCPP.dir/QM.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/QM.cpp > CMakeFiles/ExperimentCPP.dir/QM.cpp.i
-
-CMakeFiles/ExperimentCPP.dir/QM.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/QM.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/QM.cpp -o CMakeFiles/ExperimentCPP.dir/QM.cpp.s
-
-CMakeFiles/ExperimentCPP.dir/RT.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
-CMakeFiles/ExperimentCPP.dir/RT.cpp.o: ../RT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ExperimentCPP.dir/RT.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/RT.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/RT.cpp
-
-CMakeFiles/ExperimentCPP.dir/RT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExperimentCPP.dir/RT.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/RT.cpp > CMakeFiles/ExperimentCPP.dir/RT.cpp.i
-
-CMakeFiles/ExperimentCPP.dir/RT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/RT.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/RT.cpp -o CMakeFiles/ExperimentCPP.dir/RT.cpp.s
-
-CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
-CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.o: ../RcvMCA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/RcvMCA.cpp
-
-CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/RcvMCA.cpp > CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.i
-
-CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/RcvMCA.cpp -o CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.s
-
-CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
-CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.o: ../RemoteQ.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.cpp
-
-CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.cpp > CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.i
-
-CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.cpp -o CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.s
-
-CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
-CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.o: ../SendMCA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.cpp
-
-CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.cpp > CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.i
-
-CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.cpp -o CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.s
-
-CMakeFiles/ExperimentCPP.dir/main.cpp.o: CMakeFiles/ExperimentCPP.dir/flags.make
-CMakeFiles/ExperimentCPP.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ExperimentCPP.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ExperimentCPP.dir/main.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/main.cpp
-
-CMakeFiles/ExperimentCPP.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ExperimentCPP.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/main.cpp > CMakeFiles/ExperimentCPP.dir/main.cpp.i
-
-CMakeFiles/ExperimentCPP.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ExperimentCPP.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/main.cpp -o CMakeFiles/ExperimentCPP.dir/main.cpp.s
-
 # Object files for target ExperimentCPP
 ExperimentCPP_OBJECTS = \
 "CMakeFiles/ExperimentCPP.dir/ExperimentCPP/ExpMain.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/Consumer.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/Producer.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/Q.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/QM.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/RT.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.o" \
-"CMakeFiles/ExperimentCPP.dir/main.cpp.o"
+"CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.o"
 
 # External object files for target ExperimentCPP
 ExperimentCPP_EXTERNAL_OBJECTS =
 
 ExperimentCPP: CMakeFiles/ExperimentCPP.dir/ExperimentCPP/ExpMain.cpp.o
-ExperimentCPP: CMakeFiles/ExperimentCPP.dir/Consumer.cpp.o
 ExperimentCPP: CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.o
-ExperimentCPP: CMakeFiles/ExperimentCPP.dir/LocalQ.cpp.o
-ExperimentCPP: CMakeFiles/ExperimentCPP.dir/Producer.cpp.o
-ExperimentCPP: CMakeFiles/ExperimentCPP.dir/Q.cpp.o
-ExperimentCPP: CMakeFiles/ExperimentCPP.dir/QM.cpp.o
-ExperimentCPP: CMakeFiles/ExperimentCPP.dir/RT.cpp.o
-ExperimentCPP: CMakeFiles/ExperimentCPP.dir/RcvMCA.cpp.o
-ExperimentCPP: CMakeFiles/ExperimentCPP.dir/RemoteQ.cpp.o
-ExperimentCPP: CMakeFiles/ExperimentCPP.dir/SendMCA.cpp.o
-ExperimentCPP: CMakeFiles/ExperimentCPP.dir/main.cpp.o
 ExperimentCPP: CMakeFiles/ExperimentCPP.dir/build.make
 ExperimentCPP: CMakeFiles/ExperimentCPP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ExperimentCPP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ExperimentCPP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ExperimentCPP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

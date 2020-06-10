@@ -7,27 +7,42 @@
 
 #include <string>
 #include <iostream>
+#include "param.hpp"
 
-enum MsgType {T1, T2, T3};
 struct Msg {
-    std::string destQMName;
-    const MsgType msgType;
-    const size_t contLength;
-    const char* content;
-
-    Msg(std::string name, const MsgType type = T1, size_t length = 0, const char *cont = "")
-        :destQMName(name),msgType(type),contLength(length),content(cont){};
-
-    Msg(Msg *tempMsg):
-        destQMName(tempMsg->destQMName),
-        msgType(tempMsg->msgType),
-        contLength(tempMsg->contLength),
-        content(tempMsg->content) {} // copy control?
-
-    ~Msg(){
-        std::cout<<"Msg destroyed"<<std::endl;
-    }
+    long msgType;
+    char msgText[MSG_SZ] = {};
 };
+
+//Msg::Msg(long type, std::string destQM, char *text) {
+//    msgType= type;
+//    destQMName = destQM;
+//    strcpy(msgText, text);
+//}
+
+//Msg::Msg(long type, std::string destQM) {
+//    msgType= type;
+//    destQMName = destQM;
+//}
+
+//enum MsgType {T1, T2, T3};
+//struct Msg {
+//    std::string destQMName;
+//    const MsgType msgType;
+//    char content[20];
+//
+//    Msg(std::string name, const MsgType type = T1)
+//        :destQMName(name),
+//        msgType(type) { };
+//
+//    Msg(Msg *tempMsg):
+//        destQMName(tempMsg->destQMName),
+//        msgType(tempMsg->msgType) {} // copy control?
+//
+//    ~Msg(){
+//        std::cout<<"Msg destroyed"<<std::endl;
+//    }
+//};
 
 
 #endif //DISTRIBUTEDMQ_MSG_HPP

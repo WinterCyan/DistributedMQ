@@ -14,19 +14,20 @@
 class Q {
 private:
     std::string name;
-    int key; // ftok key
-    int id; // msgget id
-    Msg *tempMsg;
+    key_t key;
+    int id;
     int msgNum = 0;
 
 public:
+    Msg *msg;
+
     Q(std::string);
     int getId();
     int getMsgNum();
     std::string getName();
 
     virtual int putMsg(Msg *msg);
-    Msg popMsg();
+    void popMsg();
 };
 
 

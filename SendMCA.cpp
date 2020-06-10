@@ -3,23 +3,37 @@
 //
 
 #include <iostream>
+#include <unistd.h>
+#include <thread>
 #include "SendMCA.hpp"
 #include "RemoteQ.hpp"
 
 using namespace std;
 
-void SendMCA::run() {
-    cout<<"sendMCA::run() invoked."<<endl;
+// should MCA run as a new thread?
+void SendMCA::run(void) {
+//    auto sentMsgCount = 0;
+    status = RUNNING;
+    cout<<"sendMCA running..."<<endl;
     // TODO: create new async thread
-    for(;;) {
-        Msg msg = owner->popMsg();
-        deliverMsg(msg);
-        if (owner->getMsgNum() == 0) break;
+//    for(;;) {
+    while (true) {
+        usleep(1000);
+        owner->popMsg(); // get msg from queue
+        deliverMsg(owner->msg); // deliver queue
+        usleep(1000);
+//        sentMsgCount++;
+        if (owner->getMsgNum() <= 0) {
+            status = SUSPENDED;
+            // TODO: set a timer, count down and shut down MCA
+            break;
+        }
     }
+//    return  sentMsgCount;
 }
 
-int SendMCA::deliverMsg(Msg msg) {
-    cout<<msg.content<<" delivered by SendMCA..."<<endl;
+int SendMCA::deliverMsg(Msg *msg) {
+    cout<<"delivering msg "<<msg->msgText<<endl;
 }
 
 SendMCA::SendMCA(RemoteQ* remoteQ) {

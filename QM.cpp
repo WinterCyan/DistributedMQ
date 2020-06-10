@@ -11,7 +11,9 @@ using namespace std;
 
 // data flow of Messages?: produce()->handleMsg()->putMsg(), pass with pointer, and when msg is destroyed?
 int QM::handleMsg(Msg *msg) {
-    Q* nextQ = lookUpRT(msg->destQMName);
+    char destQM[QM_NAME_SZ];
+    memcpy(destQM, msg->msgText, QM_NAME_SZ);
+    Q* nextQ = lookUpRT(destQM);
     cout<<"Next Q: "<<nextQ->getName()<<endl;
     nextQ->putMsg(msg);
 //    routeMsg(msg, nextQ);

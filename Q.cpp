@@ -6,26 +6,37 @@
 #include <sys/ipc.h>
 #include <sys/msg.h>
 #include "Q.hpp"
+#include "param.hpp"
 
 using namespace std;
 
 int Q::putMsg(Msg *msg) {
-    cout<<"putMsg() invoked."<<endl;
-    // should or not store pointers ???
-    // TODO: parse msg content into chars, and store them into queue
+    struct Msg buf;
+    buf.msgType = 1;
+    memset(buf.msgText, 0, MSG_SZ);
+    memcpy(buf.msgText, msg->msgText, MSG_SZ);
+    if(msgsnd(id, (void*)&buf, MSG_SZ, 0) == -1) {
+        perror("msgsnd");
+        return -1;
+    }
     msgNum++;
-    return msgsnd(id, msg->content, msg->contLength, 0); // put content(char[]) only
-//    return msgsnd(id, msg, sizeof(Msg), 0); // put the whole Msg
+    cout<<" current msg count: "<<msgNum<<endl;
+    return 0;
 }
 
 // every invoke, retrieve a msg and return; kinda slow
-Msg Q::popMsg() { // return a char* ?
-    cout<<"popMsg() invoked."<<endl;
-    // here, use 200 as single msg's size
+void Q::popMsg() { // return a char* ?
+    struct Msg buf;
+    int c = msgrcv(id, &buf, MSG_SZ, 0, 0);
+//    if (msgrcv(id, tempMsg, MSG_SZ, 0, 0) == -1) { // how can I know the size of every single msg?
+    if (c == -1) {
+        perror("msgrcv");
+        return ;
+    }
     msgNum--;
-    msgrcv(id, (void*)tempMsg->content, 200, 0, 0); // how can I know the size of every single msg?
-    cout<<"-------------"<<endl;
-    return Msg(tempMsg);
+    msg->msgType = buf.msgType;
+    memcpy(msg->msgText, buf.msgText, MSG_SZ);
+    cout<<msg->msgText+20<<endl;
 }
 
 int Q::getId() {
@@ -40,8 +51,7 @@ std::string Q::getName() {
     return name;
 }
 
-Q::Q(std::string qName) {
-    name = qName;
+Q::Q(std::string qName):name(qName),msg(new Msg()) {
     key = ftok((name+".txt").c_str(),'B');
     if (key == -1) {
         perror("ftok err");

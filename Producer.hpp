@@ -12,7 +12,7 @@
 class Producer {
 private:
     std::string name;
-    Msg produce();
+    Msg *produce();
 public:
     QM ownerQM;
     Producer(std::string name, QM ownerQm);

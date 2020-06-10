@@ -8,17 +8,13 @@
 
 #include <string>
 #include <map>
-#include "DemoMAP.hpp"
-
-struct DemoMAP;
 
 class Demo {
 private:
     std::string name;
-    DemoMAP* demoMap;
 public:
-    void printName();
-    Demo(std::string name);
+    [[noreturn]] void run();
+    Demo(std::string demoName);
 };
 
 

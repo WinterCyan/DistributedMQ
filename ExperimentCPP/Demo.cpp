@@ -4,12 +4,17 @@
 
 #include "Demo.hpp"
 #include <iostream>
+#include <unistd.h>
 
-Demo::Demo(std::string demoName):demoMap(new DemoMAP()) {
-    name = demoName;
-    demoMap->localMap.insert({{"k1","v1"},{"k2","v2"}});
+[[noreturn]] void Demo::run() {
+    auto count = 0;
+    while (true) {
+        std::cout<<name<<" running,,,"<<std::endl;
+        count ++;
+        sleep(4);
+    }
 }
 
-void Demo::printName() {
-    std::cout<<name<<std::endl;
+Demo::Demo(std::string demoName) {
+    name = demoName;
 }

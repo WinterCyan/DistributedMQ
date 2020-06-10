@@ -5,27 +5,29 @@
 #include "Producer.hpp"
 #include <unistd.h>
 #include <iostream>
-
-#define DEFAULT_DEST_QM "QM3"
+#include "param.hpp"
 
 using namespace std;
 
 [[noreturn]] void Producer::run() {
-    while (true) {
-        sleep(1);
+    for (int i = 0; i<10; i++) {
+        usleep(100);
         auto msg = produce();
-        cout<<"message \""<<msg.content<<"\" sent..."<<endl;
-        this->ownerQM.handleMsg(&msg);
+        cout<<"produced msg: "<<msg->msgText<<endl;
+        this->ownerQM.handleMsg(msg);
     }
 }
 
 // produce messages
-Msg Producer::produce() {
-    string msgCont = "Message content: ";
-    auto i = random();
-    msgCont.append(to_string(i));
-    auto msg = Msg(DEFAULT_DEST_QM, T1, msgCont.size(), msgCont.c_str());
-    return msg;
+Msg *Producer::produce() {
+    char s[MSG_SZ-1] = {};
+    for (int i = 0; i < MSG_SZ-5; ++i)
+        s[i] = CHAR_SET[rand() % (sizeof(CHAR_SET) - 1)];
+    static struct Msg msg;
+    msg.msgType = 0;
+    memcpy(msg.msgText, DEFAULT_DEST_QM, sizeof(DEFAULT_DEST_QM));
+    memcpy(msg.msgText+QM_NAME_SZ, s, MSG_SZ-QM_NAME_SZ);
+    return &msg;
 }
 
 Producer::Producer(std::string name, QM ownerQM) : ownerQM(ownerQM){}

@@ -2,21 +2,24 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <sys/types.h>
-#include <sys/ipc.h>
 #include <sys/msg.h>
 #include <string.h>
+#include "../Msg.hpp"
+#include "../param.hpp"
 
 #define PERMS 0644
-struct my_msgbuf {
-    long mtype;
-    char mtext[200];
-};
+//struct my_msgbuf {
+//    long mtype;
+//    char mtext[20];
+//};
 
 int main(void) {
-    struct my_msgbuf buf;
+    struct Msg buf;
     int msqid;
     int toend;
     key_t key;
+
+    printf("size of mtext: %d\n",sizeof(buf.msgText));
 
     // get msq file
     if ((key = ftok("msgq.txt", 'B')) == -1) {
@@ -33,17 +36,16 @@ int main(void) {
     printf("msgid: %d\n", msqid);
     printf("message queue: ready to receive messages.\n");
     for(;;) {
-        // normally receiving never ends but just to make conclusion 
-        // this program ends with string of end
-        // rcv 200 chars
-        if (msgrcv(msqid, &buf, sizeof(buf.mtext), 0, 0) == -1) {
+        // normally receiving never ends but just to make conclusion
+        // this program ends wuth string of end
+        if (msgrcv(msqid, &buf, MSG_SZ, 0, 0) == -1) {
             // print error "msgrcv: Identifier removed"
             perror("msgrcv");
             exit(1);
         }
-        printf("rcved: %s\n", buf.mtext);
+        printf("rcved: %s\n", buf.msgText);
         // compare with "end"
-        toend = strcmp(buf.mtext,"end");
+        toend = strcmp(buf.msgText,"end");
         if (toend == 0)
             break;
     }
