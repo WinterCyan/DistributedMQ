@@ -18,6 +18,16 @@ iostream
 param.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/param.hpp
 
+/Users/wintercyan/CLionProjects/DistributedMQ/Producer.cpp
+Producer.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/Producer.hpp
+unistd.h
+-
+iostream
+-
+param.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/param.hpp
+
 /Users/wintercyan/CLionProjects/DistributedMQ/Producer.hpp
 Msg.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/Msg.hpp
@@ -51,16 +61,6 @@ Msg.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/Msg.hpp
 param.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/param.hpp
-
-/Users/wintercyan/CLionProjects/DistributedMQ/main.cpp
-iostream
--
-future
--
-Producer.hpp
-/Users/wintercyan/CLionProjects/DistributedMQ/Producer.hpp
-unistd.h
--
 
 /Users/wintercyan/CLionProjects/DistributedMQ/param.hpp
 

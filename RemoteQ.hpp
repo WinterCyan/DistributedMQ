@@ -14,7 +14,7 @@ private:
 public:
     SendMCA* sendMCA;
     RemoteQ(std::string);
-    int putMsg(Msg *msg) override;
+    void putMsg(Msg *msg) override;
 };
 
 

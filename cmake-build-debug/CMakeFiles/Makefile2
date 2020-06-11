@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-deb
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/TestTemplate.dir/all
 all: CMakeFiles/TestLocalMQ_Rcv.dir/all
 all: CMakeFiles/ExperimentCPP.dir/all
 all: CMakeFiles/TestLocalMQ_Snd.dir/all
@@ -66,12 +67,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/TestTemplate.dir/clean
 clean: CMakeFiles/TestLocalMQ_Rcv.dir/clean
 clean: CMakeFiles/ExperimentCPP.dir/clean
 clean: CMakeFiles/TestLocalMQ_Snd.dir/clean
 clean: CMakeFiles/DistributedMQ.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TestTemplate.dir
+
+# All Build rule for target.
+CMakeFiles/TestTemplate.dir/all:
+	$(MAKE) -f CMakeFiles/TestTemplate.dir/build.make CMakeFiles/TestTemplate.dir/depend
+	$(MAKE) -f CMakeFiles/TestTemplate.dir/build.make CMakeFiles/TestTemplate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target TestTemplate"
+.PHONY : CMakeFiles/TestTemplate.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TestTemplate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TestTemplate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/TestTemplate.dir/rule
+
+# Convenience name for target.
+TestTemplate: CMakeFiles/TestTemplate.dir/rule
+
+.PHONY : TestTemplate
+
+# clean rule for target.
+CMakeFiles/TestTemplate.dir/clean:
+	$(MAKE) -f CMakeFiles/TestTemplate.dir/build.make CMakeFiles/TestTemplate.dir/clean
+.PHONY : CMakeFiles/TestTemplate.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/TestLocalMQ_Rcv.dir

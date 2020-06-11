@@ -12,23 +12,15 @@ using namespace std;
 
 // should MCA run as a new thread?
 void SendMCA::run(void) {
-//    auto sentMsgCount = 0;
+    cout<<"run invoked."<<endl;
     status = RUNNING;
-    cout<<"sendMCA running..."<<endl;
     for (;;) {
         owner->popMsg(); // get msg from queue
-        deliverMsg(owner->inMsg); // deliver queue
-//        sentMsgCount++;
-//        if (owner->getMsgNum() <= 0) {
-//            status = SUSPENDED;
-//            // TODO: set a timer, count down and shut down MCA
-//            break;
-//        }
+        deliverMsg(owner->msg); // deliver queue
     }
 }
 
 int SendMCA::deliverMsg(Msg *msg) {
-    cout<<"delivering msg "<<msg->msgText+20<<endl;
 }
 
 SendMCA::SendMCA(RemoteQ* remoteQ) {

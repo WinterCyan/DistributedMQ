@@ -6,6 +6,7 @@
 #include <string>
 #include "QM.hpp"
 #include "RT.hpp"
+#include <unistd.h>
 
 using namespace std;
 
@@ -44,6 +45,7 @@ Q* QM::openQ(std::string destQMName, std::string qName) {
     RemoteQ* pRemoteQ;
     remoteQs.insert(std::make_pair(qName, pRemoteQ = new RemoteQ(qName))); // constructor returns pointer?
     rt->entriesMap.insert({destQMName, qName});
+    sleep(1); // sleep 1 sec when create q
     return (Q*)pRemoteQ;
 }
 

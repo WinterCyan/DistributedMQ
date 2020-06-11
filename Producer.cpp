@@ -10,9 +10,8 @@
 using namespace std;
 
 [[noreturn]] void Producer::run() {
-    for (int i = 0; i<10; i++) {
+    for (int i = 0; i<5; i++) {
         auto msg = produce();
-        cout<<"produced msg: "<<msg->msgText+20<<endl;
         ownerQM->handleMsg(msg);
     }
 }

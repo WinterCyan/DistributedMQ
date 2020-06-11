@@ -25,7 +25,6 @@ private:
 
     Q* openQ(std::string, std::string); // create new (remote)queue, destQName, qName
     Q* lookUpRT(std::string destName); // return Q's id, or 0
-    int routeMsg(Msg msg, Q*);
 
 public:
     QM(std::string);

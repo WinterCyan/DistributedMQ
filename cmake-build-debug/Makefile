@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named TestTemplate
+
+# Build rule for target.
+TestTemplate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestTemplate
+.PHONY : TestTemplate
+
+# fast build rule for target.
+TestTemplate/fast:
+	$(MAKE) -f CMakeFiles/TestTemplate.dir/build.make CMakeFiles/TestTemplate.dir/build
+.PHONY : TestTemplate/fast
+
+#=============================================================================
 # Target rules for targets named TestLocalMQ_Rcv
 
 # Build rule for target.
@@ -540,6 +553,33 @@ TestLocalMQ/mqsend.cpp.s:
 	$(MAKE) -f CMakeFiles/TestLocalMQ_Snd.dir/build.make CMakeFiles/TestLocalMQ_Snd.dir/TestLocalMQ/mqsend.cpp.s
 .PHONY : TestLocalMQ/mqsend.cpp.s
 
+TestTemplate/TemplateMain.o: TestTemplate/TemplateMain.cpp.o
+
+.PHONY : TestTemplate/TemplateMain.o
+
+# target to build an object file
+TestTemplate/TemplateMain.cpp.o:
+	$(MAKE) -f CMakeFiles/TestTemplate.dir/build.make CMakeFiles/TestTemplate.dir/TestTemplate/TemplateMain.cpp.o
+.PHONY : TestTemplate/TemplateMain.cpp.o
+
+TestTemplate/TemplateMain.i: TestTemplate/TemplateMain.cpp.i
+
+.PHONY : TestTemplate/TemplateMain.i
+
+# target to preprocess a source file
+TestTemplate/TemplateMain.cpp.i:
+	$(MAKE) -f CMakeFiles/TestTemplate.dir/build.make CMakeFiles/TestTemplate.dir/TestTemplate/TemplateMain.cpp.i
+.PHONY : TestTemplate/TemplateMain.cpp.i
+
+TestTemplate/TemplateMain.s: TestTemplate/TemplateMain.cpp.s
+
+.PHONY : TestTemplate/TemplateMain.s
+
+# target to generate assembly for a file
+TestTemplate/TemplateMain.cpp.s:
+	$(MAKE) -f CMakeFiles/TestTemplate.dir/build.make CMakeFiles/TestTemplate.dir/TestTemplate/TemplateMain.cpp.s
+.PHONY : TestTemplate/TemplateMain.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -573,6 +613,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... TestTemplate"
 	@echo "... edit_cache"
 	@echo "... TestLocalMQ_Rcv"
 	@echo "... ExperimentCPP"
@@ -621,6 +662,9 @@ help:
 	@echo "... TestLocalMQ/mqsend.o"
 	@echo "... TestLocalMQ/mqsend.i"
 	@echo "... TestLocalMQ/mqsend.s"
+	@echo "... TestTemplate/TemplateMain.o"
+	@echo "... TestTemplate/TemplateMain.i"
+	@echo "... TestTemplate/TemplateMain.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

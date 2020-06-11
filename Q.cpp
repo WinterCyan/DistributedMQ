@@ -5,23 +5,24 @@
 #include <iostream>
 #include <sys/ipc.h>
 #include <sys/msg.h>
+#include <unistd.h>
 #include "Q.hpp"
 #include "param.hpp"
 
 using namespace std;
 
-int Q::putMsg(Msg *msg) {
+void Q::putMsg(Msg *msg) {
     struct Msg buf;
     buf.msgType = 1;
     memset(buf.msgText, 0, MSG_SZ);
     memcpy(buf.msgText, msg->msgText, MSG_SZ);
-    cout<<"put msg: "<<buf.msgText+20<<endl;
     if(msgsnd(id, (void*)&buf, MSG_SZ, 0) == -1) {
         perror("msgsnd");
-        return -1;
+        return;
     }
     msgNum++;
-    return 0;
+    cout<<"put msg: "<<buf.msgText+20<<endl;
+    cout<<"msg num: "<<msgNum<<endl;
 }
 
 // every invoke, retrieve a msg and return; kinda slow
@@ -31,14 +32,11 @@ void Q::popMsg() { // return a char* ?
         perror("msgrcv");
         return ;
     }
+    msg->msgType = buf.msgType;
+    memcpy(msg->msgText, buf.msgText, MSG_SZ);
     msgNum--;
-    inMsg->msgType = buf.msgType;
-    memcpy(inMsg->msgText, buf.msgText, MSG_SZ);
-    cout << "pop msg: " << inMsg->msgText + 20 << endl;
-}
-
-int Q::getId() {
-    return id;
+    cout << "pop msg: " << msg->msgText + 20 << endl;
+    cout<<"msg num: "<<msgNum<<endl;
 }
 
 int Q::getMsgNum() {
@@ -49,7 +47,7 @@ std::string Q::getName() {
     return name;
 }
 
-Q::Q(std::string qName): name(qName), inMsg(new Msg()) {
+Q::Q(std::string qName): name(qName), msg(new Msg()) {
     key = ftok((name+".txt").c_str(),'B');
     if (key == -1) {
         perror("ftok err");

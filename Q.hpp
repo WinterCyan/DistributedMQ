@@ -19,15 +19,14 @@ private:
     int msgNum = 0;
 
 public:
-    Msg *inMsg;
-    Msg *outMsg;
+    Msg *msg;
 
     Q(std::string);
     int getId();
     int getMsgNum();
     std::string getName();
 
-    virtual int putMsg(Msg *msg);
+    virtual void putMsg(Msg *msg);
     void popMsg();
 };
 
