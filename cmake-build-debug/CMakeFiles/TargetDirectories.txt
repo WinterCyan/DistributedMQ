@@ -1,7 +1,9 @@
 /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/TestTemplate.dir
 /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/TestLocalMQ_Rcv.dir
+/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/TestSocketServer.dir
 /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/ExperimentCPP.dir
 /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/TestLocalMQ_Snd.dir
+/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/TestSocketClient.dir
 /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/DistributedMQ.dir

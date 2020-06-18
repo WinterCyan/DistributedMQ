@@ -10,10 +10,13 @@
 using namespace std;
 
 [[noreturn]] void Producer::run() {
-    for (int i = 0; i<5; i++) {
+    for (;;) {
         auto msg = produce();
+        usleep(10000); // sleep for a little while
+        cout<<"produce "<<msg->msgText+20<<endl;
         ownerQM->handleMsg(msg);
     }
+    sleep(5);
 }
 
 // produce messages
@@ -21,8 +24,8 @@ Msg *Producer::produce() {
     char s[MSG_SZ-1] = {};
     for (int i = 0; i < 10; ++i)
         s[i] = CHAR_SET[rand() % (sizeof(CHAR_SET) - 1)];
-    msg->msgType = 0;
-    memcpy(msg->msgText, DEFAULT_DEST_QM, sizeof(DEFAULT_DEST_QM));
+    msg->msgType = 1;
+    memcpy(msg->msgText, &DEST_QM_ARRAY[rand()%DEST_QM_SIZE], sizeof(DEFAULT_DEST_QM));
     memcpy(msg->msgText+QM_NAME_SZ, s, MSG_SZ-QM_NAME_SZ);
     return msg;
 }

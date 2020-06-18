@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.hpp
-Q.hpp
-/Users/wintercyan/CLionProjects/DistributedMQ/Q.hpp
-
 /Users/wintercyan/CLionProjects/DistributedMQ/Msg.hpp
 string
 -
@@ -18,45 +14,39 @@ iostream
 param.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/param.hpp
 
-/Users/wintercyan/CLionProjects/DistributedMQ/Producer.cpp
-Producer.hpp
-/Users/wintercyan/CLionProjects/DistributedMQ/Producer.hpp
-unistd.h
--
-iostream
--
-param.hpp
-/Users/wintercyan/CLionProjects/DistributedMQ/param.hpp
-
-/Users/wintercyan/CLionProjects/DistributedMQ/Producer.hpp
-Msg.hpp
-/Users/wintercyan/CLionProjects/DistributedMQ/Msg.hpp
-QM.hpp
-/Users/wintercyan/CLionProjects/DistributedMQ/QM.hpp
-
 /Users/wintercyan/CLionProjects/DistributedMQ/Q.hpp
 Msg.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/Msg.hpp
 string
 -
-
-/Users/wintercyan/CLionProjects/DistributedMQ/QM.hpp
-map
--
-Msg.hpp
-/Users/wintercyan/CLionProjects/DistributedMQ/Msg.hpp
-LocalQ.hpp
-/Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.hpp
-RemoteQ.hpp
-/Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.hpp
 
 /Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.hpp
 Q.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/Q.hpp
 SendMCA.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.hpp
+future
+-
+
+/Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.cpp
+iostream
+-
+unistd.h
+-
+thread
+-
+SendMCA.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.hpp
+RemoteQ.hpp
+/Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.hpp
 
 /Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.hpp
+netinet/in.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
 Msg.hpp
 /Users/wintercyan/CLionProjects/DistributedMQ/Msg.hpp
 param.hpp

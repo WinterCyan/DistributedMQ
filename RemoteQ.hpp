@@ -8,9 +8,11 @@
 
 #include "Q.hpp"
 #include "SendMCA.hpp"
+#include <future>
 
 class RemoteQ: public Q {
 private:
+    std::future<void> futureRun;
 public:
     SendMCA* sendMCA;
     RemoteQ(std::string);

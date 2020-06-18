@@ -35,8 +35,9 @@ int main() {
     }
     while ((read(new_socket, buffer, BUFFER_SIZE))>0) {
         printf("rcv: %s\n", buffer);
-        char hi[] = "hi, i rcved your msg.";
-        send(new_socket, hi, sizeof(hi), 0);
-        printf("snd: %s\n", hi);
+        printf("rcv: %s\n", buffer+20);
+//        char hi[] = "hi, i rcved your msg.";
+//        send(new_socket, hi, sizeof(hi), 0);
+//        printf("snd: %s\n", hi);
     }
 }

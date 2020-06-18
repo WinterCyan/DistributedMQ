@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include "Q.hpp"
 #include "param.hpp"
+#include <stdlib.h>
 
 using namespace std;
 
@@ -21,8 +22,8 @@ void Q::putMsg(Msg *msg) {
         return;
     }
     msgNum++;
-    cout<<"put msg: "<<buf.msgText+20<<endl;
-    cout<<"msg num: "<<msgNum<<endl;
+//    cout<<"put msg: "<<buf.msgText+20<<endl;
+//    cout<<"msg num: "<<msgNum<<endl;
 }
 
 // every invoke, retrieve a msg and return; kinda slow
@@ -35,8 +36,8 @@ void Q::popMsg() { // return a char* ?
     msg->msgType = buf.msgType;
     memcpy(msg->msgText, buf.msgText, MSG_SZ);
     msgNum--;
-    cout << "pop msg: " << msg->msgText + 20 << endl;
-    cout<<"msg num: "<<msgNum<<endl;
+//    cout << "pop msg: " << msg->msgText + 20 << endl;
+//    cout<<"msg num: "<<msgNum<<endl;
 }
 
 int Q::getMsgNum() {
@@ -48,6 +49,8 @@ std::string Q::getName() {
 }
 
 Q::Q(std::string qName): name(qName), msg(new Msg()) {
+    qFileName = ("touch "+name+".txt").c_str();
+    system(qFileName);
     key = ftok((name+".txt").c_str(),'B');
     if (key == -1) {
         perror("ftok err");

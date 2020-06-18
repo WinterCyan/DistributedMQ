@@ -54,7 +54,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TestTemplate.dir/DependInfo.cmake"
   "CMakeFiles/TestLocalMQ_Rcv.dir/DependInfo.cmake"
+  "CMakeFiles/TestSocketServer.dir/DependInfo.cmake"
   "CMakeFiles/ExperimentCPP.dir/DependInfo.cmake"
   "CMakeFiles/TestLocalMQ_Snd.dir/DependInfo.cmake"
+  "CMakeFiles/TestSocketClient.dir/DependInfo.cmake"
   "CMakeFiles/DistributedMQ.dir/DependInfo.cmake"
   )

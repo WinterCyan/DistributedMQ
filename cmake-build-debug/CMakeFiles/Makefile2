@@ -55,8 +55,10 @@ CMAKE_BINARY_DIR = /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-deb
 # The main recursive "all" target.
 all: CMakeFiles/TestTemplate.dir/all
 all: CMakeFiles/TestLocalMQ_Rcv.dir/all
+all: CMakeFiles/TestSocketServer.dir/all
 all: CMakeFiles/ExperimentCPP.dir/all
 all: CMakeFiles/TestLocalMQ_Snd.dir/all
+all: CMakeFiles/TestSocketClient.dir/all
 all: CMakeFiles/DistributedMQ.dir/all
 
 .PHONY : all
@@ -69,8 +71,10 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/TestTemplate.dir/clean
 clean: CMakeFiles/TestLocalMQ_Rcv.dir/clean
+clean: CMakeFiles/TestSocketServer.dir/clean
 clean: CMakeFiles/ExperimentCPP.dir/clean
 clean: CMakeFiles/TestLocalMQ_Snd.dir/clean
+clean: CMakeFiles/TestSocketClient.dir/clean
 clean: CMakeFiles/DistributedMQ.dir/clean
 
 .PHONY : clean
@@ -82,7 +86,7 @@ clean: CMakeFiles/DistributedMQ.dir/clean
 CMakeFiles/TestTemplate.dir/all:
 	$(MAKE) -f CMakeFiles/TestTemplate.dir/build.make CMakeFiles/TestTemplate.dir/depend
 	$(MAKE) -f CMakeFiles/TestTemplate.dir/build.make CMakeFiles/TestTemplate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target TestTemplate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=24,25 "Built target TestTemplate"
 .PHONY : CMakeFiles/TestTemplate.dir/all
 
 # Build rule for subdir invocation for target.
@@ -128,6 +132,33 @@ TestLocalMQ_Rcv: CMakeFiles/TestLocalMQ_Rcv.dir/rule
 CMakeFiles/TestLocalMQ_Rcv.dir/clean:
 	$(MAKE) -f CMakeFiles/TestLocalMQ_Rcv.dir/build.make CMakeFiles/TestLocalMQ_Rcv.dir/clean
 .PHONY : CMakeFiles/TestLocalMQ_Rcv.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TestSocketServer.dir
+
+# All Build rule for target.
+CMakeFiles/TestSocketServer.dir/all:
+	$(MAKE) -f CMakeFiles/TestSocketServer.dir/build.make CMakeFiles/TestSocketServer.dir/depend
+	$(MAKE) -f CMakeFiles/TestSocketServer.dir/build.make CMakeFiles/TestSocketServer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target TestSocketServer"
+.PHONY : CMakeFiles/TestSocketServer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TestSocketServer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TestSocketServer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/TestSocketServer.dir/rule
+
+# Convenience name for target.
+TestSocketServer: CMakeFiles/TestSocketServer.dir/rule
+
+.PHONY : TestSocketServer
+
+# clean rule for target.
+CMakeFiles/TestSocketServer.dir/clean:
+	$(MAKE) -f CMakeFiles/TestSocketServer.dir/build.make CMakeFiles/TestSocketServer.dir/clean
+.PHONY : CMakeFiles/TestSocketServer.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ExperimentCPP.dir
@@ -182,6 +213,33 @@ TestLocalMQ_Snd: CMakeFiles/TestLocalMQ_Snd.dir/rule
 CMakeFiles/TestLocalMQ_Snd.dir/clean:
 	$(MAKE) -f CMakeFiles/TestLocalMQ_Snd.dir/build.make CMakeFiles/TestLocalMQ_Snd.dir/clean
 .PHONY : CMakeFiles/TestLocalMQ_Snd.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TestSocketClient.dir
+
+# All Build rule for target.
+CMakeFiles/TestSocketClient.dir/all:
+	$(MAKE) -f CMakeFiles/TestSocketClient.dir/build.make CMakeFiles/TestSocketClient.dir/depend
+	$(MAKE) -f CMakeFiles/TestSocketClient.dir/build.make CMakeFiles/TestSocketClient.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target TestSocketClient"
+.PHONY : CMakeFiles/TestSocketClient.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TestSocketClient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TestSocketClient.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/TestSocketClient.dir/rule
+
+# Convenience name for target.
+TestSocketClient: CMakeFiles/TestSocketClient.dir/rule
+
+.PHONY : TestSocketClient
+
+# clean rule for target.
+CMakeFiles/TestSocketClient.dir/clean:
+	$(MAKE) -f CMakeFiles/TestSocketClient.dir/build.make CMakeFiles/TestSocketClient.dir/clean
+.PHONY : CMakeFiles/TestSocketClient.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/DistributedMQ.dir

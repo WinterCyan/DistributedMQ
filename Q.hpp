@@ -17,6 +17,7 @@ private:
     key_t key;
     int id;
     int msgNum = 0;
+    const char* qFileName;
 
 public:
     Msg *msg;

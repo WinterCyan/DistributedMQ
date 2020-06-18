@@ -137,6 +137,19 @@ TestLocalMQ_Rcv/fast:
 .PHONY : TestLocalMQ_Rcv/fast
 
 #=============================================================================
+# Target rules for targets named TestSocketServer
+
+# Build rule for target.
+TestSocketServer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestSocketServer
+.PHONY : TestSocketServer
+
+# fast build rule for target.
+TestSocketServer/fast:
+	$(MAKE) -f CMakeFiles/TestSocketServer.dir/build.make CMakeFiles/TestSocketServer.dir/build
+.PHONY : TestSocketServer/fast
+
+#=============================================================================
 # Target rules for targets named ExperimentCPP
 
 # Build rule for target.
@@ -161,6 +174,19 @@ TestLocalMQ_Snd: cmake_check_build_system
 TestLocalMQ_Snd/fast:
 	$(MAKE) -f CMakeFiles/TestLocalMQ_Snd.dir/build.make CMakeFiles/TestLocalMQ_Snd.dir/build
 .PHONY : TestLocalMQ_Snd/fast
+
+#=============================================================================
+# Target rules for targets named TestSocketClient
+
+# Build rule for target.
+TestSocketClient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestSocketClient
+.PHONY : TestSocketClient
+
+# fast build rule for target.
+TestSocketClient/fast:
+	$(MAKE) -f CMakeFiles/TestSocketClient.dir/build.make CMakeFiles/TestSocketClient.dir/build
+.PHONY : TestSocketClient/fast
 
 #=============================================================================
 # Target rules for targets named DistributedMQ
@@ -553,6 +579,60 @@ TestLocalMQ/mqsend.cpp.s:
 	$(MAKE) -f CMakeFiles/TestLocalMQ_Snd.dir/build.make CMakeFiles/TestLocalMQ_Snd.dir/TestLocalMQ/mqsend.cpp.s
 .PHONY : TestLocalMQ/mqsend.cpp.s
 
+TestSocket/socketclient.o: TestSocket/socketclient.cpp.o
+
+.PHONY : TestSocket/socketclient.o
+
+# target to build an object file
+TestSocket/socketclient.cpp.o:
+	$(MAKE) -f CMakeFiles/TestSocketClient.dir/build.make CMakeFiles/TestSocketClient.dir/TestSocket/socketclient.cpp.o
+.PHONY : TestSocket/socketclient.cpp.o
+
+TestSocket/socketclient.i: TestSocket/socketclient.cpp.i
+
+.PHONY : TestSocket/socketclient.i
+
+# target to preprocess a source file
+TestSocket/socketclient.cpp.i:
+	$(MAKE) -f CMakeFiles/TestSocketClient.dir/build.make CMakeFiles/TestSocketClient.dir/TestSocket/socketclient.cpp.i
+.PHONY : TestSocket/socketclient.cpp.i
+
+TestSocket/socketclient.s: TestSocket/socketclient.cpp.s
+
+.PHONY : TestSocket/socketclient.s
+
+# target to generate assembly for a file
+TestSocket/socketclient.cpp.s:
+	$(MAKE) -f CMakeFiles/TestSocketClient.dir/build.make CMakeFiles/TestSocketClient.dir/TestSocket/socketclient.cpp.s
+.PHONY : TestSocket/socketclient.cpp.s
+
+TestSocket/socketserver.o: TestSocket/socketserver.cpp.o
+
+.PHONY : TestSocket/socketserver.o
+
+# target to build an object file
+TestSocket/socketserver.cpp.o:
+	$(MAKE) -f CMakeFiles/TestSocketServer.dir/build.make CMakeFiles/TestSocketServer.dir/TestSocket/socketserver.cpp.o
+.PHONY : TestSocket/socketserver.cpp.o
+
+TestSocket/socketserver.i: TestSocket/socketserver.cpp.i
+
+.PHONY : TestSocket/socketserver.i
+
+# target to preprocess a source file
+TestSocket/socketserver.cpp.i:
+	$(MAKE) -f CMakeFiles/TestSocketServer.dir/build.make CMakeFiles/TestSocketServer.dir/TestSocket/socketserver.cpp.i
+.PHONY : TestSocket/socketserver.cpp.i
+
+TestSocket/socketserver.s: TestSocket/socketserver.cpp.s
+
+.PHONY : TestSocket/socketserver.s
+
+# target to generate assembly for a file
+TestSocket/socketserver.cpp.s:
+	$(MAKE) -f CMakeFiles/TestSocketServer.dir/build.make CMakeFiles/TestSocketServer.dir/TestSocket/socketserver.cpp.s
+.PHONY : TestSocket/socketserver.cpp.s
+
 TestTemplate/TemplateMain.o: TestTemplate/TemplateMain.cpp.o
 
 .PHONY : TestTemplate/TemplateMain.o
@@ -616,9 +696,11 @@ help:
 	@echo "... TestTemplate"
 	@echo "... edit_cache"
 	@echo "... TestLocalMQ_Rcv"
+	@echo "... TestSocketServer"
 	@echo "... ExperimentCPP"
 	@echo "... rebuild_cache"
 	@echo "... TestLocalMQ_Snd"
+	@echo "... TestSocketClient"
 	@echo "... DistributedMQ"
 	@echo "... Consumer.o"
 	@echo "... Consumer.i"
@@ -662,6 +744,12 @@ help:
 	@echo "... TestLocalMQ/mqsend.o"
 	@echo "... TestLocalMQ/mqsend.i"
 	@echo "... TestLocalMQ/mqsend.s"
+	@echo "... TestSocket/socketclient.o"
+	@echo "... TestSocket/socketclient.i"
+	@echo "... TestSocket/socketclient.s"
+	@echo "... TestSocket/socketserver.o"
+	@echo "... TestSocket/socketserver.i"
+	@echo "... TestSocket/socketserver.s"
 	@echo "... TestTemplate/TemplateMain.o"
 	@echo "... TestTemplate/TemplateMain.i"
 	@echo "... TestTemplate/TemplateMain.s"
