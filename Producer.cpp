@@ -13,7 +13,7 @@ using namespace std;
     for (;;) {
         auto msg = produce();
         usleep(10000); // sleep for a little while
-        cout<<"produce "<<msg->msgText+20<<endl;
+//        cout<<"produce "<<msg->msgText+20<<endl;
         ownerQM->handleMsg(msg);
     }
     sleep(5);

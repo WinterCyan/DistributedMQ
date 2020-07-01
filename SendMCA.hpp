@@ -20,6 +20,7 @@ private:
     struct sockaddr_in srv_addr;
     std::string destIP;
     int establishConn();
+    void launchRemoteServer();
     void start();
     void sleep();
     int deliverMsg(Msg*);
