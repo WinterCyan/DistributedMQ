@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(DistributedMQ)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS -pthread)
 file(GLOB MQ_SOURCES
         *.hpp
         *.cpp)

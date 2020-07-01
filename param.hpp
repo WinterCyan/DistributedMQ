@@ -12,6 +12,8 @@
 #define DEST_QM_SIZE 4
 #define PORT 9090
 #define BUFFER_SIZE 1024
+#define LAUNCH_SIG "launch"
+#define FIN_SIG "done"
 
 enum MCA_STATUS {RUNNING, SUSPENDED, STOPPED};
 //static const std::string DEST_QM_ARRAY[DEST_QM_SIZE] {"QM1","QM2","QM3","QM4","QM5"};

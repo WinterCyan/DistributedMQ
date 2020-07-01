@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/wintercyan/CLionProjects/DistributedMQ/ExperimentCPP/Demo.cpp" "/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.o"
-  "/Users/wintercyan/CLionProjects/DistributedMQ/ExperimentCPP/ExpMain.cpp" "/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/ExperimentCPP.dir/ExperimentCPP/ExpMain.cpp.o"
+  "/home/wintercyan/code/clion/DistributedMQ/ExperimentCPP/Demo.cpp" "/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles/ExperimentCPP.dir/ExperimentCPP/Demo.cpp.o"
+  "/home/wintercyan/code/clion/DistributedMQ/ExperimentCPP/ExpMain.cpp" "/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles/ExperimentCPP.dir/ExperimentCPP/ExpMain.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

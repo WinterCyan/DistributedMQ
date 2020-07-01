@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <iostream>
 #include "param.hpp"
+#include <cstring>
 
 using namespace std;
 

@@ -15,12 +15,14 @@ class RemoteQ;
 class SendMCA {
 private:
     RemoteQ* owner;
-    int client_socket_fd;
+    int daemon_client_fd;
+    int data_client_fd;
+    struct sockaddr_in daemon_addr;
+    struct sockaddr_in data_addr;
     char buffer[BUFFER_SIZE] = {};
-    struct sockaddr_in srv_addr;
     std::string destIP;
-    int establishConn();
-    void launchRemoteServer();
+    int establishDataConn(int);
+    void touchDaemon();
     void start();
     void sleep();
     int deliverMsg(Msg*);

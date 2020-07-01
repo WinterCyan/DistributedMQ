@@ -7,6 +7,7 @@
 #include "QM.hpp"
 #include "RT.hpp"
 #include <unistd.h>
+#include <cstring>
 
 using namespace std;
 

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /usr/bin/clion-2020.1.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /usr/bin/clion-2020.1.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/wintercyan/CLionProjects/DistributedMQ
+CMAKE_SOURCE_DIR = /home/wintercyan/code/clion/DistributedMQ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug
+CMAKE_BINARY_DIR = /home/wintercyan/code/clion/DistributedMQ/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DistributedMQ.dir/depend.make
@@ -59,146 +59,146 @@ include CMakeFiles/DistributedMQ.dir/flags.make
 
 CMakeFiles/DistributedMQ.dir/main.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DistributedMQ.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/main.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DistributedMQ.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/main.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/main.cpp
 
 CMakeFiles/DistributedMQ.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/main.cpp > CMakeFiles/DistributedMQ.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/main.cpp > CMakeFiles/DistributedMQ.dir/main.cpp.i
 
 CMakeFiles/DistributedMQ.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/main.cpp -o CMakeFiles/DistributedMQ.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/main.cpp -o CMakeFiles/DistributedMQ.dir/main.cpp.s
 
 CMakeFiles/DistributedMQ.dir/Consumer.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/Consumer.cpp.o: ../Consumer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DistributedMQ.dir/Consumer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/Consumer.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/Consumer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DistributedMQ.dir/Consumer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/Consumer.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/Consumer.cpp
 
 CMakeFiles/DistributedMQ.dir/Consumer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/Consumer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/Consumer.cpp > CMakeFiles/DistributedMQ.dir/Consumer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/Consumer.cpp > CMakeFiles/DistributedMQ.dir/Consumer.cpp.i
 
 CMakeFiles/DistributedMQ.dir/Consumer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/Consumer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/Consumer.cpp -o CMakeFiles/DistributedMQ.dir/Consumer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/Consumer.cpp -o CMakeFiles/DistributedMQ.dir/Consumer.cpp.s
 
 CMakeFiles/DistributedMQ.dir/LocalQ.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/LocalQ.cpp.o: ../LocalQ.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DistributedMQ.dir/LocalQ.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/LocalQ.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DistributedMQ.dir/LocalQ.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/LocalQ.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/LocalQ.cpp
 
 CMakeFiles/DistributedMQ.dir/LocalQ.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/LocalQ.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.cpp > CMakeFiles/DistributedMQ.dir/LocalQ.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/LocalQ.cpp > CMakeFiles/DistributedMQ.dir/LocalQ.cpp.i
 
 CMakeFiles/DistributedMQ.dir/LocalQ.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/LocalQ.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/LocalQ.cpp -o CMakeFiles/DistributedMQ.dir/LocalQ.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/LocalQ.cpp -o CMakeFiles/DistributedMQ.dir/LocalQ.cpp.s
 
 CMakeFiles/DistributedMQ.dir/Msg.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/Msg.cpp.o: ../Msg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DistributedMQ.dir/Msg.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/Msg.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/Msg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DistributedMQ.dir/Msg.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/Msg.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/Msg.cpp
 
 CMakeFiles/DistributedMQ.dir/Msg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/Msg.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/Msg.cpp > CMakeFiles/DistributedMQ.dir/Msg.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/Msg.cpp > CMakeFiles/DistributedMQ.dir/Msg.cpp.i
 
 CMakeFiles/DistributedMQ.dir/Msg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/Msg.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/Msg.cpp -o CMakeFiles/DistributedMQ.dir/Msg.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/Msg.cpp -o CMakeFiles/DistributedMQ.dir/Msg.cpp.s
 
 CMakeFiles/DistributedMQ.dir/Producer.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/Producer.cpp.o: ../Producer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DistributedMQ.dir/Producer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/Producer.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/Producer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DistributedMQ.dir/Producer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/Producer.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/Producer.cpp
 
 CMakeFiles/DistributedMQ.dir/Producer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/Producer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/Producer.cpp > CMakeFiles/DistributedMQ.dir/Producer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/Producer.cpp > CMakeFiles/DistributedMQ.dir/Producer.cpp.i
 
 CMakeFiles/DistributedMQ.dir/Producer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/Producer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/Producer.cpp -o CMakeFiles/DistributedMQ.dir/Producer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/Producer.cpp -o CMakeFiles/DistributedMQ.dir/Producer.cpp.s
 
 CMakeFiles/DistributedMQ.dir/Q.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/Q.cpp.o: ../Q.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DistributedMQ.dir/Q.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/Q.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/Q.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DistributedMQ.dir/Q.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/Q.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/Q.cpp
 
 CMakeFiles/DistributedMQ.dir/Q.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/Q.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/Q.cpp > CMakeFiles/DistributedMQ.dir/Q.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/Q.cpp > CMakeFiles/DistributedMQ.dir/Q.cpp.i
 
 CMakeFiles/DistributedMQ.dir/Q.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/Q.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/Q.cpp -o CMakeFiles/DistributedMQ.dir/Q.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/Q.cpp -o CMakeFiles/DistributedMQ.dir/Q.cpp.s
 
 CMakeFiles/DistributedMQ.dir/QM.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/QM.cpp.o: ../QM.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DistributedMQ.dir/QM.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/QM.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/QM.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DistributedMQ.dir/QM.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/QM.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/QM.cpp
 
 CMakeFiles/DistributedMQ.dir/QM.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/QM.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/QM.cpp > CMakeFiles/DistributedMQ.dir/QM.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/QM.cpp > CMakeFiles/DistributedMQ.dir/QM.cpp.i
 
 CMakeFiles/DistributedMQ.dir/QM.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/QM.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/QM.cpp -o CMakeFiles/DistributedMQ.dir/QM.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/QM.cpp -o CMakeFiles/DistributedMQ.dir/QM.cpp.s
 
 CMakeFiles/DistributedMQ.dir/RT.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/RT.cpp.o: ../RT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DistributedMQ.dir/RT.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/RT.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/RT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DistributedMQ.dir/RT.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/RT.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/RT.cpp
 
 CMakeFiles/DistributedMQ.dir/RT.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/RT.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/RT.cpp > CMakeFiles/DistributedMQ.dir/RT.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/RT.cpp > CMakeFiles/DistributedMQ.dir/RT.cpp.i
 
 CMakeFiles/DistributedMQ.dir/RT.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/RT.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/RT.cpp -o CMakeFiles/DistributedMQ.dir/RT.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/RT.cpp -o CMakeFiles/DistributedMQ.dir/RT.cpp.s
 
 CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o: ../RcvMCA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/RcvMCA.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/RcvMCA.cpp
 
 CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/RcvMCA.cpp > CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/RcvMCA.cpp > CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.i
 
 CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/RcvMCA.cpp -o CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/RcvMCA.cpp -o CMakeFiles/DistributedMQ.dir/RcvMCA.cpp.s
 
 CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o: ../RemoteQ.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/RemoteQ.cpp
 
 CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.cpp > CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/RemoteQ.cpp > CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.i
 
 CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/RemoteQ.cpp -o CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/RemoteQ.cpp -o CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.s
 
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: CMakeFiles/DistributedMQ.dir/flags.make
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o: ../SendMCA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o -c /Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o -c /home/wintercyan/code/clion/DistributedMQ/SendMCA.cpp
 
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DistributedMQ.dir/SendMCA.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.cpp > CMakeFiles/DistributedMQ.dir/SendMCA.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wintercyan/code/clion/DistributedMQ/SendMCA.cpp > CMakeFiles/DistributedMQ.dir/SendMCA.cpp.i
 
 CMakeFiles/DistributedMQ.dir/SendMCA.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DistributedMQ.dir/SendMCA.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wintercyan/CLionProjects/DistributedMQ/SendMCA.cpp -o CMakeFiles/DistributedMQ.dir/SendMCA.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wintercyan/code/clion/DistributedMQ/SendMCA.cpp -o CMakeFiles/DistributedMQ.dir/SendMCA.cpp.s
 
 # Object files for target DistributedMQ
 DistributedMQ_OBJECTS = \
@@ -230,7 +230,7 @@ DistributedMQ: CMakeFiles/DistributedMQ.dir/RemoteQ.cpp.o
 DistributedMQ: CMakeFiles/DistributedMQ.dir/SendMCA.cpp.o
 DistributedMQ: CMakeFiles/DistributedMQ.dir/build.make
 DistributedMQ: CMakeFiles/DistributedMQ.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable DistributedMQ"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable DistributedMQ"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DistributedMQ.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -243,6 +243,6 @@ CMakeFiles/DistributedMQ.dir/clean:
 .PHONY : CMakeFiles/DistributedMQ.dir/clean
 
 CMakeFiles/DistributedMQ.dir/depend:
-	cd /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/wintercyan/CLionProjects/DistributedMQ /Users/wintercyan/CLionProjects/DistributedMQ /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/DistributedMQ.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wintercyan/code/clion/DistributedMQ/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wintercyan/code/clion/DistributedMQ /home/wintercyan/code/clion/DistributedMQ /home/wintercyan/code/clion/DistributedMQ/cmake-build-debug /home/wintercyan/code/clion/DistributedMQ/cmake-build-debug /home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles/DistributedMQ.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DistributedMQ.dir/depend
 

@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /usr/bin/clion-2020.1.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /usr/bin/clion-2020.1.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/wintercyan/CLionProjects/DistributedMQ
+CMAKE_SOURCE_DIR = /home/wintercyan/code/clion/DistributedMQ
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug
+CMAKE_BINARY_DIR = /home/wintercyan/code/clion/DistributedMQ/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/clion-2020.1.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/clion-2020.1.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles /home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wintercyan/CLionProjects/DistributedMQ/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wintercyan/code/clion/DistributedMQ/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,30 +124,17 @@ TestTemplate/fast:
 .PHONY : TestTemplate/fast
 
 #=============================================================================
-# Target rules for targets named TestLocalMQ_Rcv
+# Target rules for targets named DistributedMQ
 
 # Build rule for target.
-TestLocalMQ_Rcv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestLocalMQ_Rcv
-.PHONY : TestLocalMQ_Rcv
+DistributedMQ: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DistributedMQ
+.PHONY : DistributedMQ
 
 # fast build rule for target.
-TestLocalMQ_Rcv/fast:
-	$(MAKE) -f CMakeFiles/TestLocalMQ_Rcv.dir/build.make CMakeFiles/TestLocalMQ_Rcv.dir/build
-.PHONY : TestLocalMQ_Rcv/fast
-
-#=============================================================================
-# Target rules for targets named TestSocketServer
-
-# Build rule for target.
-TestSocketServer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestSocketServer
-.PHONY : TestSocketServer
-
-# fast build rule for target.
-TestSocketServer/fast:
-	$(MAKE) -f CMakeFiles/TestSocketServer.dir/build.make CMakeFiles/TestSocketServer.dir/build
-.PHONY : TestSocketServer/fast
+DistributedMQ/fast:
+	$(MAKE) -f CMakeFiles/DistributedMQ.dir/build.make CMakeFiles/DistributedMQ.dir/build
+.PHONY : DistributedMQ/fast
 
 #=============================================================================
 # Target rules for targets named ExperimentCPP
@@ -163,17 +150,30 @@ ExperimentCPP/fast:
 .PHONY : ExperimentCPP/fast
 
 #=============================================================================
-# Target rules for targets named TestLocalMQ_Snd
+# Target rules for targets named TestSocketServer
 
 # Build rule for target.
-TestLocalMQ_Snd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestLocalMQ_Snd
-.PHONY : TestLocalMQ_Snd
+TestSocketServer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestSocketServer
+.PHONY : TestSocketServer
 
 # fast build rule for target.
-TestLocalMQ_Snd/fast:
-	$(MAKE) -f CMakeFiles/TestLocalMQ_Snd.dir/build.make CMakeFiles/TestLocalMQ_Snd.dir/build
-.PHONY : TestLocalMQ_Snd/fast
+TestSocketServer/fast:
+	$(MAKE) -f CMakeFiles/TestSocketServer.dir/build.make CMakeFiles/TestSocketServer.dir/build
+.PHONY : TestSocketServer/fast
+
+#=============================================================================
+# Target rules for targets named TestLocalMQ_Rcv
+
+# Build rule for target.
+TestLocalMQ_Rcv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestLocalMQ_Rcv
+.PHONY : TestLocalMQ_Rcv
+
+# fast build rule for target.
+TestLocalMQ_Rcv/fast:
+	$(MAKE) -f CMakeFiles/TestLocalMQ_Rcv.dir/build.make CMakeFiles/TestLocalMQ_Rcv.dir/build
+.PHONY : TestLocalMQ_Rcv/fast
 
 #=============================================================================
 # Target rules for targets named TestSocketClient
@@ -189,17 +189,17 @@ TestSocketClient/fast:
 .PHONY : TestSocketClient/fast
 
 #=============================================================================
-# Target rules for targets named DistributedMQ
+# Target rules for targets named TestLocalMQ_Snd
 
 # Build rule for target.
-DistributedMQ: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DistributedMQ
-.PHONY : DistributedMQ
+TestLocalMQ_Snd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestLocalMQ_Snd
+.PHONY : TestLocalMQ_Snd
 
 # fast build rule for target.
-DistributedMQ/fast:
-	$(MAKE) -f CMakeFiles/DistributedMQ.dir/build.make CMakeFiles/DistributedMQ.dir/build
-.PHONY : DistributedMQ/fast
+TestLocalMQ_Snd/fast:
+	$(MAKE) -f CMakeFiles/TestLocalMQ_Snd.dir/build.make CMakeFiles/TestLocalMQ_Snd.dir/build
+.PHONY : TestLocalMQ_Snd/fast
 
 Consumer.o: Consumer.cpp.o
 
@@ -693,15 +693,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
 	@echo "... TestTemplate"
 	@echo "... edit_cache"
-	@echo "... TestLocalMQ_Rcv"
-	@echo "... TestSocketServer"
-	@echo "... ExperimentCPP"
-	@echo "... rebuild_cache"
-	@echo "... TestLocalMQ_Snd"
-	@echo "... TestSocketClient"
 	@echo "... DistributedMQ"
+	@echo "... ExperimentCPP"
+	@echo "... TestSocketServer"
+	@echo "... TestLocalMQ_Rcv"
+	@echo "... TestSocketClient"
+	@echo "... TestLocalMQ_Snd"
 	@echo "... Consumer.o"
 	@echo "... Consumer.i"
 	@echo "... Consumer.s"

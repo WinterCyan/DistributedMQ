@@ -9,6 +9,7 @@
 #include "Q.hpp"
 #include "param.hpp"
 #include <stdlib.h>
+#include <cstring>
 
 using namespace std;
 
@@ -61,5 +62,4 @@ Q::Q(std::string qName): name(qName), msg(new Msg()) {
         perror("msgget err");
         exit(1);
     }
-    cout<<"queue name, key, id: "<<qName<<" "<<key<<" "<<id<<";"<<endl;
 }

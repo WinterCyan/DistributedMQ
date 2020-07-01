@@ -6,14 +6,16 @@
 #include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <thread>
 #include <iostream>
 #include <string>
+#include <cstring>
+#include <thread>
+#include "../param.hpp"
 
 #define PORT 9090
 #define BUFFER_SIZE 1024
-extern void execute_socket(int);
-extern int launch_new();
+extern void createNewDataSock(int);
+extern void runningDataSocket(int, struct sockaddr*, socklen_t*);
 int main() {
     int server_fd, new_socket;
 //    char buffer[BUFFER_SIZE] = {};
@@ -39,8 +41,7 @@ int main() {
 //    auto p = getsockname(server_fd, (struct sockaddr *)&addr, &size);
 //    std::cout<<"port: "<<addr.sin_port<<std::endl;
     while ((new_socket = accept(server_fd, (struct sockaddr*) &addr, (socklen_t*)&addr_len))>=0) {
-        new std::thread(execute_socket, new_socket);
-        std::cout<<"invoke new thread to launch new server("<<new_socket<<")."<<std::endl;
+        new std::thread(createNewDataSock, new_socket);
     }
 //    if ((new_socket = accept(server_fd, (struct sockaddr*) &addr, (socklen_t*)&addr_len)) < 0) {
 //        perror("accept failed.");
@@ -54,33 +55,62 @@ int main() {
 //        printf("snd: %s\n", hi);
 //    }
 }
-void execute_socket(int new_socket) {
+void createNewDataSock(int new_socket) {
     char buffer[BUFFER_SIZE] = {};
     while (read(new_socket, buffer, BUFFER_SIZE)>0) {
-        printf("rcv: %s\n", buffer);
-        if (strcmp(buffer,"launch")==0) {
-//            launch_new();
-            std::cout<<"launch new server..."<<std::endl;
-
-            // create new server socket
-            struct sockaddr_in new_srv_addr;
-            int addr_len = sizeof(new_srv_addr);
-            new_srv_addr.sin_family = AF_INET;
-            new_srv_addr.sin_addr.s_addr = INADDR_ANY;
-            new_srv_addr.sin_port = 0;
-            auto s = socket(AF_INET,SOCK_STREAM,0);
-            bind(s, (struct sockaddr*)&new_srv_addr, sizeof(new_srv_addr));
-            socklen_t sz = sizeof(new_srv_addr);
-            getsockname(s, (struct sockaddr*)&new_srv_addr, &sz);
-            auto p = (int)new_srv_addr.sin_port;
-
+        if (strcmp(buffer,LAUNCH_SIG)==0) {
+            // create new data socket
+            struct sockaddr_in data_sock_addr;
+            data_sock_addr.sin_family = AF_INET;
+            data_sock_addr.sin_addr.s_addr = INADDR_ANY;
+            data_sock_addr.sin_port = 0;
+            int data_addr_len = sizeof(data_sock_addr);
+            int data_sock_fd;
+            if ((data_sock_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) {
+                perror("create server socket failed.");
+                exit(EXIT_FAILURE);
+            }
+            if (bind(data_sock_fd, (struct sockaddr *)&data_sock_addr, sizeof(data_sock_addr)) < 0) {
+                perror("bind failed.");
+                exit(EXIT_FAILURE);
+            }
+            if (listen(data_sock_fd, 1) < 0) {
+                perror("listen failed.");
+                exit(EXIT_FAILURE);
+            }
+            struct sockaddr* pAddr = (sockaddr*)&data_sock_addr;
+            socklen_t* pLen = (socklen_t*)&data_addr_len;
+            new std::thread(runningDataSocket, data_sock_fd, pAddr, pLen);
+            sleep(1);
+//            runningDataSocket(data_sock_fd,pAddr,pLen);
+//            auto s = socket(AF_INET,SOCK_STREAM,0);
+//            bind(s, (struct sockaddr*)&data_sock_addr, sizeof(data_sock_addr));
+//            if (listen(s, 1) < 0) {
+//                perror("listen failed.");
+//                exit(EXIT_FAILURE);
+//            }
+            socklen_t sz = sizeof(data_sock_addr);
+            getsockname(data_sock_fd, (struct sockaddr*)&data_sock_addr, &sz);
+            auto p = (int)data_sock_addr.sin_port;
             // send back port number
-            auto doneinfo = std::to_string(p)+", done";
-            send(new_socket,doneinfo.c_str(),4,0);
+            auto port_info = FIN_SIG + std::to_string(p);
+            std::cout << "port number: " << port_info.c_str()+4 << std::endl;
+            send(new_socket, port_info.c_str(), sizeof(port_info), 0);
         }
-        if (strcmp(buffer,"done")==0) { } // finish create-connection and terminate the thread
+        if (strcmp(buffer,FIN_SIG)==0) { // finish create-connection and terminate the thread
+            std::cout<<"daemon connection closed."<<std::endl;
+            return;
+        }
     }
 }
 
-int launch_new() {
+void runningDataSocket(int fd, struct sockaddr* addr, socklen_t* len) {
+    int new_socket;
+    std::cout<<"data socket listening, ";
+    while ((new_socket = accept(fd, addr, len))>=0) {
+        char buffer[BUFFER_SIZE] = {};
+        while (read(new_socket, buffer, BUFFER_SIZE)>0) {
+            std::cout<<"data socket rcv msg: "<<buffer+20<<std::endl;
+        }
+    }
 }
